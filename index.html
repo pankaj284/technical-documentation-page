@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>                   technical-documentation-page
+    </title>
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header>Python Documentation</header>
+      <ul>
+        <li><a class="nav-link"  href="#Introduction">Introduction</a></li>
+        <li><a class="nav-link" href="#Why_Python_is_beginner_friendly_language">Why Python is beginner friendly <span>language</span></a></li>
+        <li><a class="nav-link" href="#Indentation">Indentation</a></li>
+        <li><a class="nav-link"  href="#Variables">Variables</a></li>
+        <li><a class="nav-link"  href="#Global_variables">Global variables</a></li>
+        <li><a class="nav-link"  href="#Data_types">Data types</a></li>
+        <li><a class="nav-link"  href="#if...else_statement">if...else statement</a></li>
+        <li><a class="nav-link"  href="#Loops">Loops</a></li>
+        <li><a class="nav-link"  href="#Reference">Reference</a></li>
+      </ul>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header>Introduction</header>
+        <article>
+          <p>Python is a very popular general-purpose interpreted, interactive, object-oriented, and high-level programming language. Python is dynamically-typed and garbage-collected programming language. It was created by Guido van Rossum during 1985- 1990. Like Perl, Python source code is also available under the GNU General Public License (GPL).</p>
+          <ul>
+            <li>In Data Science, Python libraries like Numpy, Pandas, and Matplotlib are used for data analysis and visualization.</li>
+            <li>Python frameworks like Django, and Pyramid, make the development and deployment of Web Applications easy.</li>
+            <li>This programming language also extends its applications to computer vision and image processing.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Why_Python_is_beginner_friendly_language">
+        <header>Why Python is beginner friendly language</header>
+        <article>
+          <p>Python is considered a beginner-friendly language because:</p>
+          <ul>
+            <li><span class="bold">Easy-to-learn</span> − Python has few keywords, simple structure, and a clearly defined syntax. This allows the student to pick up the language quickly.</li>
+            <li><span class="bold">Easy-to-read</span> − Python code is more clearly defined and visible to the eyes.</li>
+            <li><span class="bold">Easy-to-maintain</span> − Python's source code is fairly easy-to-maintain.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="main-section" id="Indentation">
+        <header>Indentation</header>
+        <article>
+          <p>Python programming provides no braces to indicate blocks of code for class and function definitions or flow control. Blocks of code are denoted by line indentation, which is rigidly enforced.</p>
+          <p>The number of spaces in the indentation is variable, but all statements within the block must be indented the same amount. For example −</p>
+          <code><span class="purple">if</span> <span class="orange">True</span>:
+   <span class="purple">print</span> (<span class="green">"True"</span>)
+ <span class="purple">else</span>:
+    <span class="purple">print</span> (<span class="green">"False"</span>)</code>
+        </article>
+      </section>
+
+      <section class="main-section" id="Variables">
+        <header>Variables</header>
+        <article>
+          <p>A Python variable is created automatically when you assign a value to it. The equal sign (=) is used to assign values to variables</p>
+          <p>The operand to the left of the = operator is the name of the variable and the operand to the right of the = operator is the value stored in the variable. For example −</p>
+          <code>counter <span class="equal-operator">=</span> <span class="orange">100</span>          <span class="comments"># Creates an integer variable</span>
+miles   <span class="equal-operator">=</span> <span class="orange">1000.0</span>       <span class="comments"># Creates a floating point variable</span>
+name    <span class="equal-operator">=</span> <span class="green">"Zara Ali"</span>   <span class="comments"># Creates a string variable</span></code>
+        </article>
+      </section>
+      <section class="main-section" id="Global_variables">
+        <header>Global variables</header>
+        <article>Any variable created outside a function can be accessed within any function and so they have global scope.</article>
+        <code>x <span class="equal-operator">=</span> <span class="orange">5</span>           <span class="comments">#global variable</span>
+y <span class="equal-operator">=</span> <span class="orange">10</span>          <span class="comments">#global variable</span>
+<span class="purple">def</span> <span class="orange">sum</span>():
+   <span class="purple">sum</span> <span class="equal-operator">=</span> x + y
+   <span class="purple">return</span> <span class="purple">sum</span>
+<span class="purple">print</span>(<span class="purple">sum</span>())</code>
+      </section>
+
+
+      <section class="main-section" id="Data_types">
+        <header>Data types</header>
+        <article>
+          <p>Python data types are actually classes, and the defined variables are their instances or objects. Since Python is dynamically typed, the data type of a variable is determined at runtime based on the assigned value.</p>
+          <p>In general, the data types are used to define the type of a variable. It represents the type of data we are going to store in a variable and determines what operations can be done on it.</p>
+          <img id="data-type-chart" src="	https://www.tutorialspoint.com/python/images/data_types.jpg" alt="data types chart">
+          <p>primitive data type are shown below.</p>
+          <code>var1 <span class="equal-operator">=</span> <span class="orange">1</span>       <span class="comments"># int data type</span>
+var2 <span class="equal-operator">=</span> <span class="orange">True</span>    <span class="comments"># bool data type</span>
+var3 <span class="equal-operator">=</span> <span class="orange">10.023</span>  <span class="comments"># float data type</span>
+var4 <span class="equal-operator">=</span> <span class="orange">10+3j</span>   <span class="comments"># complex data type</span></code>
+        </article>
+      </section>
+      <section class="main-section" id="if...else_statement">
+        <header>if...else statement</header>
+        <article>
+        <p>The if-else statement in Python is used to execute a block of code when the condition in the if statement is true, and another block of code when the condition is false.</p>
+        <p>The syntax of an if-else statement in Python is as follows −</p>
+        <code><span class="purple">if</span> boolean_expression:
+  <span class="comments"># code block to be executed
+  # when boolean_expression is true</span>
+<span class="purple">else</span>:
+  <span class="comments"># code block to be executed
+  # when boolean_expression is false</span></code>
+  <p>lets see below example −</p>
+  <code>age<span class="equal-operator">=</span><span class="orange">25</span>
+<span class="purple">print</span> (<span class="green">"age: "</span>, age)
+<span class="purple">if</span> age <span class="equal-operator">>=</span><span class="orange">18</span>:
+   <span class="purple">print</span> (<span class="green">"eligible to vote"</span>)
+<span class="purple">else</span>:
+   <span class="purple">print</span> (<span class="green">"not eligible to vote"</span>)</code>
+        </article>
+      </section>
+      <section class="main-section" id="Loops">
+        <header>Loops</header>
+        <article>
+          <p>There are 3 types Loop statements are in Python they are −</p> 
+          <ul>
+            <li>for Loop</li>
+            <li>for-else Loop</li>
+            <li>while Loop</li>
+          </ul>
+          <p id="sub-heading">for Loop</p>
+          <p>The for loop in Python provides the ability to loop over the items of any sequence, such as a list, tuple or a string.</p>
+          <p id="sub-heading">Syntax of for loop</p>
+          <code><span class="purple">for</span> iterating_var <span class="purple">in</span> sequence:
+   statement(s)</code>
+          <p>lets see below example −</p>
+          <code>numbers <span class="equal-operator">=</span> [<span class="orange">34</span>,<span class="orange">54</span>,<span class="orange">67</span>,<span class="orange">21</span>,<span class="orange">78</span>,<span class="orange">97</span>,<span class="orange">45</span>,<span class="orange">44</span>,<span class="orange">80</span>,<span class="orange">19</span>]
+total <span class="equal-operator">=</span> <span class="orange">0</span>
+<span class="purple">for</span> num <span class="purple">in</span> numbers:
+   <span class="purple">if</span> num<span class="equal-operator">%</span><span class="orange">2</span> <span class="equal-operator">==</span> <span class="orange">0</span>:
+      <span class="purple">print</span> (num)</code>
+        </article>
+      </section>
+      <section class="main-section" id="Reference">
+        <header>Reference</header>
+        <article>
+          <ul>
+            <li>All the documentation in this page is taken from <a href="https://www.tutorialspoint.com/python/index.htm" target="_blank">tutorialpoint</a></li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </body>
+</html>
